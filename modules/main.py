@@ -33,7 +33,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("I Am A Bot For Download Links From Your **.TXT** File. \n\n **Bot Made By 𝙈𝘼𝙃𝙄® ** \n\n Send /mahi ")
+    editable = await m.reply_text("I Am A Bot For Download Links From Your **.TXT** File. \n\n **Bot Made By 🧊 Sunny Ji 🧊 ** \n\n Send /Sunny ")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
@@ -43,7 +43,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["mahi"]) & filters.user(ADMINS))
+@bot.on_message(filters.command(["Sunny"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send me **TXT File**⚡️')
     input: Message = await bot.listen(editable.chat.id)
@@ -107,26 +107,26 @@ async def account_login(bot: Client, m: Message):
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
-    highlighter  = f"️<b>➳ᴹᴿ°᭄ᴍᴀʜɪ⚔❼✓࿐</b>⁪⁬⁮⁮⁮"
+    highlighter  = f"️<b> 🧊 Sunny Ji 🧊 </b>⁪⁬⁮⁮⁮"
     if raw_text3 == 'no':
         MR = highlighter 
     else:
         MR = raw_text3
    
-    #await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/7af9a8ab33a563cc7e6d4.jpg \n Or if don't want thumbnail send = no")
+    #await editable.edit("Now send the Thumb url/nEg » https://telegra.ph/file/827bc3fd8c8b83ca88d3d.jpg \n Or if don't want thumbnail send = no")
   #  input6 = message = await bot.listen(editable.chat.id)
   #  raw_text6 = input6.text 
    # await input6.delete(True)
    # await editable.delete()
 
-   # thumb = "https://telegra.ph/file/69523f2e37ddf316b1623.jpg"
+   # thumb = "https://telegra.ph/file/827bc3fd8c8b83ca88d3d.jpg"
    # if thumb.startswith("http://") or thumb.startswith("https://"):
    #     getstatusoutput(f"wget '{thumb}' -O 'thumb.jpg'")
-    #    thumb = "https://graph.org/file/7af9a8ab33a563cc7e6d4.jpg"
+    #    thumb = "https://telegra.ph/file/827bc3fd8c8b83ca88d3d.jpg"
    # else:
        # thumb == "no"
 
-    await editable.edit("Now send the **Thumbnail URL**\n\nEg » https://graph.org/file/7af9a8ab33a563cc7e6d4.jpg\n\nOr if don't want thumbnail send = no")
+    await editable.edit("Now send the **Thumbnail URL**\n\nEg » https://telegra.ph/file/827bc3fd8c8b83ca88d3d.jpg\n\nOr if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -204,7 +204,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⏬️ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶 ⏬️... »**\n\n**🧾Name »** `{name}\n♻️Quality » {raw_text2}`\n\n**🔗URL »** `{url}`\n\n **🍁 Bot made by 𝙈𝘼𝙃𝙄® 🫰❤️‍🔥**"
+                    Show = f"**⏬️ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶 ⏬️... »**\n\n**🧾Name »** `{name}\n♻️Quality » {raw_text2}`\n\n**🔗URL »** `{url}`\n\n **🍁 Bot made by 🧊 Sunny Ji 🧊**"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -221,7 +221,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**💛 DONE BRO 😎**")
+    await m.reply_text("**💛 DONE Sunny Ji 😎**")
 
 
 bot.run()
